@@ -336,7 +336,8 @@ class Ui_MainWindow(QtCore.QObject):
 	try:
 	    devices = scanner.scan(5.0)
 	except:
-	    self.wite.emit("[Error]: Error during scan")
+	    self.write.emit("[Error]: Error during scan")
+	    return
 
 	for dev in devices:
 	    label = ""
