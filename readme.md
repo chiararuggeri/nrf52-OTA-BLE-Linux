@@ -1,10 +1,10 @@
-#Python nrf52 OTA BLE
+# Python nrf52 OTA BLE
 
 This is a python program to perform a Device Firmware Update over BLE on nRF52832 devices.
 It has been developed on Linux 14.04.
 The target device should have SDK version 11 and must have a working DFU service.
 
-##Prerequisite
+## Prerequisite
 
 This project depends by several modules:
 
@@ -18,7 +18,7 @@ This project depends by several modules:
 - pyqt4
 	sudo apt-get install python-qt4
 
-##Usage
+## Usage
 
 Launch the program with the following command:
 
