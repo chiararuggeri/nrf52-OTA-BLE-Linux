@@ -8,7 +8,7 @@
 # WARNING! All changes made in this file will be lost!
 
 from PyQt4 import QtCore, QtGui
-from PyQt4.QtGui import QFileDialog
+from PyQt4.QtGui import QFileDialog, QStyleFactory
 from PyQt4.QtCore import pyqtSignal
 
 from bluepy.btle import *
@@ -947,6 +947,7 @@ class Ui_MainWindow(QtCore.QObject):
 if __name__ == "__main__":
     import sys
     app = QtGui.QApplication(sys.argv)
+    app.setStyle(QStyleFactory.create("GTK+"))
     MainWindow = QtGui.QMainWindow()
     ui = Ui_MainWindow()
     ui.setupUi(MainWindow)
